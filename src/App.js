@@ -14,16 +14,14 @@ function App() {
       <div className="App">
         <Routes>
           {/* Route:is the component user needs to see when they will navigate to that path. */}
-
-          <Route path="/" exact component={LandingPage} />
-          <Route path="/Home" component={Home} />
-          <Route path="/SignIn" component={SignIn} />
-          <Route path="/SignUp" component={SignUp} />
-          <Route path="/LandingPage" component={LandingPage} />
-          <Route path="Profile" component={Profile} />
-          <Route path="SingleProfile" component={SingleProfile} />
-          <Route path="NotFound" component={NotFound} />
-          <Route />
+          <Route path="/" exact element={<LandingPage />} />
+          <Route path="/Home" element={Home} />
+          <Route path="/SignIn" element={<SignIn />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/LandingPage" element={<LandingPage />} />
+          <Route path="Profile" element={<Profile />} />
+          <Route path="SingleProfile" element={<SingleProfile />} />
+          <Route path="NotFound" element={<NotFound />} />
         </Routes>
       </div>
     </Router>

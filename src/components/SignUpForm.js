@@ -1,9 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 //onSubmit check all form input before sending and collect data
 const SignUpForm = (props) => {
   console.log(props);
   return (
     <form>
+      <NavLink to="/SignIn" className="signIn">
+        Sign In
+      </NavLink>
       <div className="form-field">
         <label htmlFor="firstname">First name</label>
         <input
