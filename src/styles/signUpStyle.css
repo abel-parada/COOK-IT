@@ -1,0 +1,9 @@
+.signup-container main {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+.formImg {
+  height: 90vh;
+  width: 50%;
+}

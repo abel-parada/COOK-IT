@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SignUpForm from "../components/SignUpForm";
-
+import cook from "../images/cook.jpg";
+import "../styles/signUpStyle.css";
 class SignUp extends Component {
   state = {
     firstname: "",
@@ -19,7 +20,19 @@ class SignUp extends Component {
   render() {
     return (
       <div className="signup-container">
-        <SignUpForm formHandler={this.formHandler} />
+        <header>
+          <h1>Cook IT</h1>
+        </header>
+        <main>
+          <img
+            src={cook}
+            alt="Food"
+            width="500"
+            height="400"
+            className="formImg"
+          />
+          <SignUpForm formHandler={this.formHandler} />
+        </main>
       </div>
     );
   }

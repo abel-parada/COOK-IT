@@ -10,22 +10,22 @@ const PhotoGrid = () => {
   return (
     <div className="gallery">
       <div className="card box1">
-        <img src={bake} alt="Food" width="500" height="400"></img>
+        <img src={bake} alt="Food" width="500" height="400" />
       </div>
       <div className="card box2">
-        <img src={foodImg1} alt="Food" width="500" height="400"></img>
+        <img src={foodImg1} alt="Food" width="500" height="400" />
       </div>
       <div className="card box3">
-        <img src={foodImg2} alt="Food" width="500" height="400"></img>
+        <img src={foodImg2} alt="Food" width="500" height="400" />
       </div>
       <div className="card box4">
-        <img src={cut} alt="Food" width="500" height="400"></img>
+        <img src={cut} alt="Food" width="500" height="400" />
       </div>
       <div className="card box5">
-        <img src={eat} alt="Food" width="500" height="400"></img>
+        <img src={eat} alt="Food" width="500" height="400" />
       </div>
       <div className="card box6">
-        <img src={cook} alt="Food" width="500" height="400"></img>
+        <img src={cook} alt="Food" width="500" height="400" />
       </div>
     </div>
   );
