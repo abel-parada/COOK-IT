@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SignUpForm from "../components/SignUpForm";
 import cook from "../images/cook.jpg";
-import "../styles/signUpStyle.css";
+
 class SignUp extends Component {
   state = {
     firstname: "",

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import SignInForm from "../components/SignInForm";
-import "../styles/signInStyle.css";
 
 class SignIn extends Component {
   state = {
