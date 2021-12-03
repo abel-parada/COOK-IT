@@ -1,18 +1,9 @@
-.bgSignUp-image {
-  background-image: url("../images/cut.jpg");
-  /* Add the blur effect */
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-  height: 80vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.signup-container main {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
 }
-a.signin {
-  text-transform: uppercase;
-  font-size: 1rem;
-  border-radius: 50%;
-  padding: 0.5rem;
-  background-color: #ecb653;
-  color: #734062;
+.formImg {
+  height: 90vh;
+  width: 50%;
 }

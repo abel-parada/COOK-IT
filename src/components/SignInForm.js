@@ -5,41 +5,31 @@ import { NavLink } from "react-router-dom";
 const SignInForm = (props) => {
   console.log(props);
   return (
-    <div className="inner-container">
-      <form>
-        <NavLink className="signUp" to="/SignUp">
-          Sign Up
-        </NavLink>
-
-        <div className="form-field">
-          <h2>LOGIN FORM</h2>
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="your email"
-            required
-            onChange={props.formHandler}
-          ></input>
-        </div>
-        <div className="form-field">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="your password"
-            onChange={props.formHandler}
-          ></input>
-        </div>
-        <input type="submit" value="send"></input>
-      </form>
-      <div className="right-container">
-        <h2>WELCOME BACK</h2>
-        <h3>CookIt is ....</h3>
+    <form>
+      <NavLink className="signUp" to="/SignUp">
+        Sign Up
+      </NavLink>
+      <div className="form-field">
+        <label htmlFor="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          onChange={props.formHandler}
+        ></input>
       </div>
-    </div>
+      <div className="form-field">
+        <label htmlFor="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          onChange={props.formHandler}
+        ></input>
+      </div>
+      <input type="submit" value="send"></input>
+    </form>
   );
 };
 
