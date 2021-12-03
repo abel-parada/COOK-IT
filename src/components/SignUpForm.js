@@ -19,7 +19,7 @@ const SignUpForm = (props) => {
             id="firstname"
             required
             onChange={props.formHandler}
-          ></input>
+          />
         </div>
         <div className="form-field">
           <label htmlFor="lastname">Last name</label>
@@ -28,7 +28,7 @@ const SignUpForm = (props) => {
             name="lastname"
             id="lastname"
             onChange={props.formHandler}
-          ></input>
+          />
         </div>
         <div className="form-field">
           <label htmlFor="phone">Phone number</label>
@@ -37,7 +37,7 @@ const SignUpForm = (props) => {
             name="phone"
             id="phone"
             onChange={props.formHandler}
-          ></input>
+          />
         </div>{" "}
         <div className="form-field">
           <label htmlFor="email">Email</label>
@@ -48,7 +48,7 @@ const SignUpForm = (props) => {
             onChange={props.formHandler}
           />
         </div>
-        <input type="submit" value="send"></input>
+        <input type="submit" value="send" />
       </form>
       <div class="right-container">
         <h2>LET'S GET STARTED!</h2>
