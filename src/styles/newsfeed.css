@@ -1,0 +1,32 @@
+.newsfeedcard {
+  width: 600px;
+  background-color: white;
+  box-shadow: 0 0 5px grey;
+  border: solid black;
+  border-width: 1px;
+  margin: 50px auto;
+  text-transform: capitalize;
+  border-radius: 12px;
+}
+
+.cardhead {
+  width: 100%;
+  background-color: hsl(39, 80%, 63%, 0.6);
+  color: hsl(320, 28%, 35%);
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.newspic {
+  width: 100%;
+}
+
+.comment {
+  width: 100%;
+  background-color: hsl(39, 80%, 63%, 0.6);
+  color: hsl(320, 28%, 35%);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}

@@ -4,6 +4,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import {HiPlusCircle} from "react-icons/hi";
 import {HiOutlineUserCircle} from "react-icons/hi";
+import {FaSearch} from "react-icons/fa";
 
 const navigation = [
   { name: 'About', href: '#', current: true },
@@ -16,7 +17,7 @@ function classNames(...classes) {
 
 export default function Navigation() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-purple-400">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -52,7 +53,7 @@ export default function Navigation() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-yellow-400 text-white' : 'text-gray-300 hover:bg-yellow-400 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -66,7 +67,14 @@ export default function Navigation() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  className="bg-gray-800 p-1 rounded-full text-yellow-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-yellow-800 focus:ring-white"
+                >
+                  <span className="sr-only" >View notifications</span>
+                  <FaSearch className="h-6 w-6" aria-hidden="true" />
+                </button>
+                <button
+                  type="button"
+                  className="bg-gray-800 p-1 rounded-full text-yellow-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-yellow-800 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>
                   <HiPlusCircle className="h-6 w-6" aria-hidden="true" />
@@ -75,9 +83,9 @@ export default function Navigation() {
                 {/* Profile dropdown */}
                 <Menu as="div" className="ml-3 relative">
                   <div>
-                    <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                    <Menu.Button className="bg-yellow-400 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
-                      <HiOutlineUserCircle/>
+                      <HiOutlineUserCircle fontSize="2.75rem"/>
                     </Menu.Button>
                   </div>
                   <Transition
