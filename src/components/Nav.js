@@ -1,18 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import recipeLogo from "../images/cookit.svg";
 
 const Nav = () => {
   return (
-    <nav>
+    <nav className="navClas">
       <img alt="cook it logo" src={recipeLogo} className="logo" />
       <h2>The Authentic food</h2>
       <ul>
         <li>
-          <NavLink to="/SignIn">Sign In</NavLink>
-          <NavLink className="signup" to="/SignUp">
+          <Link to="/Signin" className="signin">
+            Sign In
+          </Link>
+          <Link to="/Signup" className="signup">
             Sign Up
-          </NavLink>
+          </Link>
         </li>
       </ul>
     </nav>
