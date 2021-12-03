@@ -6,8 +6,8 @@ const Main = () => {
     <main>
       <div className="container">
         {/* Route:is the component user needs to see when they will navigate to that path. */}
-        <SocialNetwork />
         <PhotoGrid />
+        <SocialNetwork />
       </div>
     </main>
   );
