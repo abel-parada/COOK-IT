@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import SignInForm from "../components/SignInForm";
-import Footer from "../components/Footer";
 import "../styles/formStyle.css";
 import Headerone from "../components/Headerone";
 
@@ -35,7 +34,6 @@ class SignIn extends Component {
         <main className="main-container">
           <SignInForm formHandler={this.formHandler} submit={this.onSubmit} />
         </main>
-        <Footer />
       </div>
     );
   }

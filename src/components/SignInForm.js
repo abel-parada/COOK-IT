@@ -7,31 +7,33 @@ import { FaGooglePlus } from "react-icons/fa";
 const SignInForm = (props) => {
   console.log(props);
   return (
-    <div className="inner-container">
+    <div className="inner-container signin-inContainer">
       <form>
-        <NavLink className="signUp" to="/SignUp">
-          Sign Up
-        </NavLink>
-
         <div className="form-field">
           <h2>LOGIN FORM</h2>
-          <label htmlFor="email">Email</label>
+          {/* <label htmlFor="email">Email</label> */}
+          <span class="input-item">
+            <i class="fa fa-user-circle"></i>
+          </span>
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="your email"
+            placeholder="@email"
             required
             onChange={props.formHandler}
           />
         </div>
         <div className="form-field">
-          <label htmlFor="password">Password</label>
+          {/* <label htmlFor="password">Password</label> */}
+          <span class="input-item">
+            <i class="fa fa-key"></i>
+          </span>
           <input
             type="password"
             name="password"
             id="password"
-            placeholder="your password"
+            placeholder="Password"
             onChange={props.formHandler}
           />
         </div>
@@ -39,7 +41,7 @@ const SignInForm = (props) => {
       </form>
       <div className="right-container">
         <h2>WELCOME BACK</h2>
-        <h3>CookIt is ....</h3>
+        <h3>To Keep connected with us please login with your personal info</h3>
         <div className="social-site">
           <button>
             Join us with
@@ -49,6 +51,10 @@ const SignInForm = (props) => {
             Join us with
             <FaGooglePlus color="#734062" size="1rem" className="icon" />
           </button>
+
+          <NavLink className="signUp" to="/SignUp">
+            Sign Up
+          </NavLink>
         </div>
       </div>
     </div>

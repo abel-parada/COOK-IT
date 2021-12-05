@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Headerone from "../components/Headerone";
 import SignUpForm from "../components/SignUpForm";
-import Footer from "../components/Footer";
 
 class SignUp extends Component {
   state = {
@@ -25,7 +24,6 @@ class SignUp extends Component {
         <main className="main-container">
           <SignUpForm formHandler={this.formHandler} />
         </main>
-        <Footer />
       </div>
     );
   }

@@ -7,7 +7,7 @@ import Profile from "./pages/Profile";
 import SingleProfile from "./pages/SingleProfile";
 import NotFound from "./pages/NotFound";
 import "./App.css";
-
+//  test
 function App() {
   return (
     <div>

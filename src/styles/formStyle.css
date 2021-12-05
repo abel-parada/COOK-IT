@@ -1,18 +1,11 @@
 /***************** signup button *********************/
-
-.signUp {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 50%;
-  padding: 0.5rem;
-  color: #734062;
-  background-color: burlywood;
-}
+/* * {
+  border: 1px solid green;
+} */
 
 .main-container {
   max-width: 1450px;
-  height: 70vh;
+  height: 90vh;
   position: relative;
   width: 100vw;
   display: flex;
@@ -38,8 +31,13 @@
 .inner-container {
   display: flex;
   width: 80%;
-  height: fit-content;
+  height: 80%;
   border-radius: 5px;
+  margin: 2rem;
+}
+.signin-inContainer {
+  height: 70%;
+  margin-top: 1rem;
 }
 .right-container {
   flex-basis: 50%;
@@ -47,17 +45,37 @@
   border-radius: 5px;
   background-image: linear-gradient(
     to right,
-    rgba(51, 46, 46, 0.178),
+    rgba(51, 46, 46, 0.2),
     rgba(32, 19, 19, 0.65)
   );
   text-align: center;
+  color: white;
+  word-spacing: 0.2rem;
+  font-size: 1.5rem;
+}
+.right-h2 {
+  padding-top: 5rem;
+}
+
+.signUp,
+.signIn {
+  display: block;
+  width: 10vw;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+
+  background-image: linear-gradient(to right, #ecb653, #734062);
 }
 .right-container h2 {
-  font-size: 1.5rem;
-  margin-top: 5rem;
+  margin: 2rem 7rem 0;
+  font-size: 1.8rem;
 }
 .right-container h3 {
-  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
 }
 .social-site {
   display: flex;
@@ -68,7 +86,6 @@
 }
 button {
   display: inline-flex;
-
   font-size: 1rem;
   color: black;
   border-radius: 5px;
@@ -76,6 +93,24 @@ button {
   background-color: aliceblue;
   margin-top: 1rem;
 }
+button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+  animation: ani9 all 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
 form {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #734062;
@@ -101,32 +136,25 @@ input[type="submit"] {
   color: black;
   border-radius: 5px;
   text-transform: capitalize;
-  height: 2rem;
+  height: 3rem;
   padding-left: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  margin: 1rem;
 }
 
 input[type="submit"] {
   background-image: linear-gradient(to right, #ecb653, #734062);
-  margin: 2rem auto;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   height: 2.5rem;
 }
 input[type="submit"]:hover {
   background-color: grey;
 }
-/***************** Signin button *****************/
-.signIn {
-  text-transform: uppercase;
-  font-size: 1rem;
-  border-radius: 50%;
-  padding: 0.5rem;
-  color: #734062;
-  background-color: burlywood;
+.footer-bar {
+  display: none;
 }
-
 .footer-bar p {
   font-size: 1.2rem;
 }
@@ -134,10 +162,6 @@ input[type="submit"]:hover {
 @media (max-width: 835px) {
   .main-container {
     height: 73vh;
-  }
-
-  input[type="submit"] {
-    margin: 1rem auto;
   }
 }
 @media (max-width: 700px) {
