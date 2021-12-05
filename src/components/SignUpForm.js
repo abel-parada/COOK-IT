@@ -6,10 +6,10 @@ const SignUpForm = (props) => {
   console.log(props);
   return (
     <div className="inner-container">
-      <form>
+      <form onSubmit={props.submit}>
         <div className="form-field">
           <h2>JOIN WITH US</h2>
-          {/* <label htmlFor="firstname">Firstname</label> */}
+          <label htmlFor="firstname">Firstname</label>
           <input
             type="text"
             name="firstname"
@@ -20,7 +20,7 @@ const SignUpForm = (props) => {
           />
         </div>
         <div className="form-field">
-          {/* <label htmlFor="lastname">Lastname</label> */}
+          <label htmlFor="lastname">Lastname</label>
           <input
             type="text"
             name="lastname"
@@ -30,7 +30,7 @@ const SignUpForm = (props) => {
           />
         </div>
         <div className="form-field">
-          {/* <label htmlFor="phone">Username</label> */}
+          <label htmlFor="phone">Username</label>
           <input
             type="Username"
             name="username"
@@ -40,7 +40,7 @@ const SignUpForm = (props) => {
           />
         </div>{" "}
         <div className="form-field">
-          {/* <label htmlFor="email">Email</label> */}
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             name="email"
@@ -50,7 +50,7 @@ const SignUpForm = (props) => {
           />
         </div>
         <div className="form-field">
-          {/* <label htmlFor="password">Password</label> */}
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             name="password"
