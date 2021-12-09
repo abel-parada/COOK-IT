@@ -59,15 +59,8 @@ h2 {
 main .container {
   background-color: rgb(245, 245, 245);
   position: relative;
-  min-height: 73vh;
+  min-height: 50vh;
   margin-top: 1rem;
-}
-.socialnetwork {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 0.5rem;
-  text-transform: capitalize;
 }
 .icon {
   width: 2rem;
