@@ -29,6 +29,9 @@ h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
 }
+.bars {
+  display: none;
+}
 .navClas ul {
   list-style: none;
 }
@@ -45,6 +48,10 @@ h2 {
   border: 1px solid black;
   border-radius: 5px 20px;
   padding: 0.5rem;
+}
+.navClas li a:active,
+li a:hover {
+  color: white;
 }
 .signup {
   background-color: #ecb653;
@@ -146,33 +153,54 @@ img {
   padding: 1rem 0;
 }
 @media (max-width: 1200px) {
-  .gallery {
+  /* .gallery {
     max-width: 80%;
     margin-top: 4rem;
     grid-template-rows: repeat(5, 4rem);
+  } */
+}
+@media (max-width: 700px) {
+  h2 {
+    margin-left: 4rem;
+  }
+  main .container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
   }
 }
 @media (max-width: 550px) {
-  .navClas {
-    flex-wrap: wrap;
-  }
+  /* .bars {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 0;
+  } */
   h1 {
     font-size: 2rem;
   }
   h2 {
-    padding-left: 0rem;
-    padding-top: 2rem;
-    font-size: 1.2rem;
-  }
-  .navClas ul {
-    margin: 2rem;
+    margin-left: 0;
+    font-size: 1rem;
   }
 
+  .navClas li a {
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0rem;
+    padding: 5px;
+  }
   .logo {
     width: 80px;
     height: 70px;
   }
+  .gallery {
+    width: 90%;
+    grid-template-columns: repeat(4, 3fr);
+    grid-template-rows: repeat(5, 4rem);
+  }
   footer p {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 }

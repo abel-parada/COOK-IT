@@ -2,10 +2,18 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { FaGooglePlus } from "react-icons/fa";
+import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
+import { GoogleLogin } from "react-google-login";
 
-//onSubmit check all form input before sending and collect data
 const SignInForm = (props) => {
-  console.log(props);
+  const responseFacebook = (response) => {
+    console.log(response);
+  };
+
+  const responseGoogle = (response) => {
+    console.log(response);
+  };
+
   return (
     <div className="inner-container signin-inContainer">
       <form onSubmit={props.submit}>
@@ -43,18 +51,47 @@ const SignInForm = (props) => {
         <h2>WELCOME BACK</h2>
         <h3>To Keep connected with us please login with your personal info</h3>
         <div className="social-site">
-          <button>
-            Join us with
-            <FaFacebook color="#734062" size="0.5rem" className="icon" />
-          </button>
-          <button>
-            Join us with
-            <FaGooglePlus color="#734062" size="1rem" className="icon" />
-          </button>
-
-          <NavLink className="signUp" to="/SignUp">
-            Sign Up
-          </NavLink>
+          <FacebookLogin
+            appId=""
+            //autoLoad
+            callback={responseFacebook}
+            render={(renderProps) => (
+              <button onClick={renderProps.onClick}>
+                Join us with
+                <FaFacebook color="#734062" size="0.5rem" className="icon" />
+              </button>
+            )}
+          />
+          {/* <FacebookLogin
+            appId="1088597931155576"
+            autoLoad={true}
+            fields="name,email,picture"
+            callback={responseFacebook}
+            cssClass="my-facebook-button-class"
+            icon={<FaFacebook color="#734062" size="0.4rem" className="icon" />}
+          /> */}
+          <GoogleLogin
+            clientId=""
+            render={(renderProps) => (
+              <button
+                onClick={renderProps.onClick}
+                disabled={renderProps.disabled}
+              >
+                Join us with
+                <FaGooglePlus color="#734062" size="1rem" className="icon" />
+              </button>
+            )}
+            buttonText="Login"
+            onSuccess={responseGoogle}
+            onFailure={responseGoogle}
+            cookiePolicy={"single_host_origin"}
+          />
+          <p className="text-sm mt-4">
+            Dont have an account?
+            <NavLink className="signUp" to="/SignUp">
+              Sign Up
+            </NavLink>
+          </p>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import cookImg from "../images/cut.jpg";
 //onSubmit check all form input before sending and collect data
 const SignUpForm = (props) => {
   console.log(props);
@@ -63,11 +63,17 @@ const SignUpForm = (props) => {
       </form>
       <div class="right-container">
         <h2 className="right-h2">Hello Friend!</h2>
-        <h3>Enter your personal details and start journey with use.</h3>
+        <h3>Enter your personal details and start journey with us.</h3>
         <p>Already have an account?</p>
         <NavLink to="/SignIn" className="signIn">
           Sign In
         </NavLink>
+        <img
+          data-aos-duration="1500"
+          src={cookImg}
+          alt="add"
+          className="cutImg"
+        />
       </div>
     </div>
   );
