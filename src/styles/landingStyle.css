@@ -12,6 +12,7 @@ footer {
 .container h1 {
   font-size: 2rem;
   font-weight: 500;
+  padding: 0 90px;
 }
 /************************** Header ******************************/
 /*nav {
