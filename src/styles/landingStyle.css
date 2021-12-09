@@ -1,4 +1,4 @@
-.navbar,
+/*.navbar,
 .footer-bar {
   width: 100vw;
   text-align: center;
@@ -6,7 +6,7 @@
   background-color: #837a7a;
   margin-top: 0;
   height: 15vh;
-}
+}*/
 .container {
   max-width: 100vw;
 }
@@ -141,9 +141,10 @@ img {
   animation-delay: calc(6 * var(--stagger-delay));
 }
 
-footer p {
+/*footer p {
   padding: 1rem 0;
-}
+}*/
+
 @media (max-width: 1200px) {
   .gallery {
     max-width: 80%;
@@ -171,7 +172,11 @@ footer p {
     width: 80px;
     height: 70px;
   }
-  footer p {
+  /*footer p {
     padding: 2rem 0;
-  }
+  }*/
 }
+/*footer {
+  width: 50%;
+  margin: auto;
+}*/
