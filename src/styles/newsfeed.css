@@ -1,4 +1,10 @@
-.newsfeedcard {
+.feed {
+  flex: 5.5;
+}
+
+/* Old code starts here */
+
+/* .newsfeedcard {
   width: 600px;
   background-color: white;
   box-shadow: 0 0 5px grey;
@@ -7,6 +13,7 @@
   margin: 50px auto;
   text-transform: capitalize;
   border-radius: 12px;
+  flex: 6;
 }
 
 .cardhead {
@@ -29,4 +36,4 @@
   color: hsl(320, 28%, 35%);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-}
+} */ ;
