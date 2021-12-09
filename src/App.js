@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import Profile from "./pages/Profile";
 import SingleProfile from "./pages/SingleProfile";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           {/* Route:is the component user needs to see when they will navigate to that path. */}
           <Route path="/" exact element={<LandingPage />} />
           <Route path="/Home" element={<Home />} />
+          <Route path="/About" element={<About />} />
           <Route path="/SignIn" element={<SignIn />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/LandingPage" element={<LandingPage />} />
