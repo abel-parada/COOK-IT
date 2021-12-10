@@ -8,40 +8,78 @@ const Footer = () => {
           <div class="mt-8 sm:mt-0 sm:w-full sm:px-12 flex flex-col md:flex-row justify-between">
             <div class="flex flex-col">
               <span class="font-bold text-gray-700 uppercase mb-2">
-                About us{" "}
+                Special diets{" "}
               </span>
               <span class="my-2">
-                <a href="#" class="text-blue-700  text-md hover:text-blue-500">
-                  link 1
+                <a
+                  href="#"
+                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                >
+                  Vegetarian
                 </a>
               </span>
               <span class="my-2">
-                <a href="#" class="text-blue-700  text-md hover:text-blue-500">
-                  link 1
+                <a
+                  href="#"
+                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                >
+                  Non-vegetarian{" "}
                 </a>
               </span>
               <span class="my-2">
-                <a href="#" class="text-blue-700  text-md hover:text-blue-500">
-                  link 1
+                <a
+                  href="#"
+                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                >
+                  Low carb{" "}
+                </a>
+              </span>
+              <span class="my-2">
+                <a
+                  href="#"
+                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                >
+                  Vegan{" "}
                 </a>
               </span>
             </div>
             <div class="flex flex-col">
               <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">
-                services
+                explore cuisines{" "}
               </span>
               <span class="my-2">
-                <a href="#" class="text-blue-700 text-md hover:text-blue-500">
+                <a
+                  href="#"
+                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                >
+                  {" "}
                   link 1
                 </a>
               </span>
               <span class="my-2">
-                <a href="#" class="text-blue-700  text-md hover:text-blue-500">
+                <a
+                  href="#"
+                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                >
+                  {" "}
                   link 1
                 </a>
               </span>
               <span class="my-2">
-                <a href="#" class="text-blue-700 text-md hover:text-blue-500">
+                <a
+                  href="#"
+                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                >
+                  {" "}
+                  link 1
+                </a>
+              </span>
+              <span class="my-2">
+                <a
+                  href="#"
+                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                >
+                  {" "}
                   link 1
                 </a>
               </span>
@@ -57,7 +95,7 @@ const Footer = () => {
                     class="text-blue-700  text-md hover:text-blue-500"
                   >
                     <svg
-                      class="w-6 h-6 text-blue-300 fill-current"
+                      class="w-6 h-6 text-gray-300 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >
@@ -71,7 +109,7 @@ const Footer = () => {
                     class="text-blue-700  text-md hover:text-blue-500"
                   >
                     <svg
-                      class="w-6 h-6 text-green-400 fill-current"
+                      class="w-6 h-6 text-gray-400 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                     >
@@ -85,7 +123,7 @@ const Footer = () => {
                     class="text-blue-700  text-md hover:text-blue-500"
                   >
                     <svg
-                      class="w-6 h-6 text-blue-600 fill-current"
+                      class="w-6 h-6 text-gray-600 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >

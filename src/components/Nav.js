@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import recipeLogo from "../images/cookit.svg";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
@@ -9,10 +7,11 @@ import Avatar from "react-avatar";
 import { HiPlusSm } from "react-icons/hi";
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
+  { name: "Dashboard", href: "#", current: false },
   { name: "Home", href: "#", current: false },
+  { name: "About Us", href: "#", current: false },
   { name: "Recepies", href: "#", current: false },
-  { name: "MyRecepies", href: "#", current: false },
+  { name: "My Recepies", href: "#", current: false },
 ];
 
 function classNames(...classes) {
@@ -20,14 +19,14 @@ function classNames(...classes) {
 }
 const Nav = () => {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-500">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className=" inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -49,16 +48,16 @@ const Nav = () => {
                     alt="Workflow"
                   />
                 </div>
-                <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
+                <div className="hidden sm:block sm:ml-4">
+                  <div className="flex space-x-7">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            ? " bg-gray-800 text-white"
+                            : "text-gray-200 hover:bg-gray-700 hover:text-white-500",
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -72,7 +71,7 @@ const Nav = () => {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  className="bg-gray-800 p-1 rounded-full text-gray-200 hover:text-white-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>
                   <HiPlusSm className="h-6 w-6" aria-hidden="true" />

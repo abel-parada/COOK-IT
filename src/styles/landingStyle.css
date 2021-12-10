@@ -20,7 +20,7 @@ footer {
   justify-content: space-evenly;
   list-style-type: none;
 }*/
-h2 {
+/*h2 {
   padding-left: 8rem;
   padding-top: 1rem;
   font-size: 1.2rem;
@@ -45,13 +45,13 @@ nav li a {
 .signup {
   background-color: #ecb653;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+}*/
 /*.logo {
   width: 100px;
   height: 100px;
 }*/
 /************************** Main ******************************/
-.socialnetwork {
+/*.socialnetwork {
   text-align: center;
   padding: 1rem;
   text-transform: capitalize;
@@ -63,7 +63,7 @@ nav li a {
   width: 2rem;
   height: 2rem;
   margin: 0 1rem;
-}
+}*/
 main .container {
   background-color: rgb(245, 245, 245);
 }
@@ -138,7 +138,7 @@ footer p {
 }
 
 @media (max-width: 550px) {
-  nav {
+  /*nav {
     display: flex;
     flex-wrap: wrap;
   }
@@ -157,7 +157,7 @@ footer p {
   .logo {
     width: 80px;
     height: 70px;
-  }
+  }*/
   footer p {
     padding: 2rem 0;
   }
