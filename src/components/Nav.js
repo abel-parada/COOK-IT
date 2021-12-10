@@ -6,17 +6,16 @@ const Nav = () => {
     <nav className="navClas">
       <img alt="cook it logo" src={recipeLogo} className="logo" />
       <h2>The Authentic food</h2>
-      {/* <div>
-        <FaBars className="bars h-10 w-10" />
-      </div> */}
-
-      <ul>
+      <ul className="nav-link">
         <li>
           <NavLink to="/Signin" className="signin">
             Sign In
           </NavLink>
           <NavLink to="/Signup" className="signup">
             Sign Up
+          </NavLink>
+          <NavLink to="/about" className="about">
+            About us
           </NavLink>
         </li>
       </ul>

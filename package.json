@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "hamburger-react": "^2.4.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-facebook-login": "^4.1.1",

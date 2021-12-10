@@ -1,8 +1,3 @@
-/***************** signup button *********************/
-/* * {
-  border: 1px solid green;
-} */
-
 .main-container {
   max-width: 1450px;
   height: 85vh;
@@ -33,6 +28,7 @@
   width: 80%;
   height: 80%;
   border-radius: 5px;
+  padding: 1rem;
 }
 .signin-inContainer {
   height: 60%;
@@ -43,26 +39,20 @@
 }
 .right-container {
   flex-basis: 50%;
-  border: 1px solid black;
+  /* border: 1px solid black;
   border-radius: 5px;
   background-image: linear-gradient(
     to right,
     rgba(51, 46, 46, 0.2),
     rgba(32, 19, 19, 0.23)
-  );
+  ); */
   text-align: center;
   word-spacing: 0.2rem;
   font-size: 1.3rem;
-  color: white;
+  color: #55123f;
   position: relative;
 }
-.cutImg {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 300px;
-  width: 400px;
-}
+
 .signUp {
   color: white;
 }
@@ -92,7 +82,8 @@
   justify-content: center;
   align-items: center;
 }
-button {
+.gogl-button,
+.fb-button {
   display: inline-flex;
   font-size: 1rem;
   color: black;
@@ -136,7 +127,9 @@ form {
   flex-direction: column;
   margin: 1rem 0;
 }
-
+.form-field label {
+  text-align: left;
+}
 input,
 input[type="submit"] {
   font-family: "Roboto", sans-serif;
@@ -157,74 +150,40 @@ input[type="submit"] {
   font-size: 1.2rem;
   height: 2.5rem;
   margin-top: 1.2rem;
+  margin-right: 3.5rem;
 }
 input[type="submit"]:hover {
   background-color: grey;
 }
 
 /***************** shared form style for small device  *********************/
-@media (max-width: 1150px) {
-  .main-container {
-    height: 85vh;
-  }
+@media (max-width: 900px) {
   .inner-container {
-    height: fit-content;
-    margin: 5px;
     width: 90%;
-  }
-  form {
-    padding: 0.5rem;
-    font-size: 1rem;
-  }
-  .signin-inContainer {
-    height: 60%;
-  }
-  .right-container h2 {
-    padding-top: 1rem;
-    margin-top: 0.5rem;
   }
 }
 @media (max-width: 835px) {
+  .main-container {
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+  }
   .inner-container {
-    width: 90%;
-  }
-  .inner-container h2 {
-    margin-left: 5rem;
-  }
-  a.signUp {
-    margin: 0.5rem;
+    display: block;
+    width: 90vw;
+    margin-bottom: 1rem;
   }
   .signIn,
   .signUp {
     width: fit-content;
   }
+  /* a.signup,
+  a.about {
+    margin: 0;
+  } */
 }
-@media (max-width: 700px) {
-  input,
-  input[type="submit"] {
-    font-size: 1rem;
-  }
-  .form-field h2 {
-    font-size: 1rem;
-    margin: 0rem;
-    padding: 0;
-  }
-  form h2 {
-    text-align: center;
-  }
-}
-/*header not responsive below this  needed hamburger menu*/
-@media (max-width: 600px) {
-  .inner-container {
-    width: 90vw;
-  }
 
-  .right-container {
-    display: none;
-  }
-  .signin-inContainer {
-    height: 60%;
-  }
+@media (max-width: 600px) {
   form {
     flex-basis: 100%;
   }
@@ -236,12 +195,11 @@ input[type="submit"]:hover {
     font-size: 1rem;
     height: 1.5rem;
   }
+  .navClas h2 {
+    display: none;
+  }
 }
 @media (max-width: 400px) {
-  .main-container {
-    height: 90vh;
-  }
-
   form {
     margin: 0.5;
     font-size: 1rem;
@@ -252,9 +210,6 @@ input[type="submit"]:hover {
   }
 }
 @media (max-width: 320px) {
-  .navClas h2 {
-    display: none;
-  }
   a.signIn {
     padding-left: 2rem;
   }
