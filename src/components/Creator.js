@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 const Creator = ({ name, pic, id, job, github }) => {
   const githubHandler = () => {
     window.open(`https://github.com/${github}`);

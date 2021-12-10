@@ -2,17 +2,17 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { FaGooglePlus } from "react-icons/fa";
-import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
-import { GoogleLogin } from "react-google-login";
+// import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
+// import { GoogleLogin } from "react-google-login";
 
 const SignInForm = (props) => {
-  const responseFacebook = (response) => {
-    console.log(response);
-  };
+  // const responseFacebook = (response) => {
+  //   console.log(response);
+  // };
 
-  const responseGoogle = (response) => {
-    console.log(response);
-  };
+  // const responseGoogle = (response) => {
+  //   console.log(response);
+  // };
 
   return (
     <div className="inner-container signin-inContainer">
