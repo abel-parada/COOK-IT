@@ -46,7 +46,8 @@
 .social-icon {
   display: flex;
   justify-content: center;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem;
+  margin-left: 1rem;
 }
 .svgIcon {
   width: 1.5rem;

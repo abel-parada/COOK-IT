@@ -2,12 +2,12 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
-const Creator = ({ name, pic, id, job, github }) => {
+const Creator = ({ name, pic, profile, job, github }) => {
   const githubHandler = () => {
     window.open(`https://github.com/${github}`);
   };
   const linkedinHandler = () => {
-    window.open(`https://github.com/${github}`);
+    window.open(`https://www.linkedin.com/in/${profile}`);
   };
   return (
     <>

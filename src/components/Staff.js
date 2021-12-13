@@ -5,15 +5,15 @@ export const staff = [
     job: "Developer",
     github: "abel-parada",
     pic: "assets/images/abel.jpg",
-    linkedin: "",
+    profile: "abelparadamillan",
   },
   {
     id: 2,
     name: "Shahriar",
-    job: "Bossman",
+    job: "Developer",
     github: "ShahSau",
     pic: "assets/images/shahriar.png",
-    linkedin: "",
+    profile: "shahriar-karim-saurov-53a6ba4b",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const staff = [
     job: "Developer",
     github: "meanjula",
     pic: "assets/images/anjula.jpg",
-    linkedin: "",
+    profile: "meanjula/",
   },
   {
     id: 4,
@@ -29,6 +29,6 @@ export const staff = [
     job: "Developer",
     github: "AsravanthiR",
     pic: "assets/images/sravanthi.jpeg",
-    linkedin: "",
+    profile: "sravanthi-avadhanula-70097820b",
   },
 ];
