@@ -6,38 +6,38 @@ const SignUpForm = (props) => {
   console.log(props);
   return (
     <div className="inner-container">
-      <form>
-        <NavLink to="/SignIn" className="signIn">
-          Sign In
-        </NavLink>
+      <form onSubmit={props.submit}>
         <div className="form-field">
           <h2>JOIN WITH US</h2>
-          <label htmlFor="firstname">First name</label>
+          <label htmlFor="firstname">Firstname</label>
           <input
             type="text"
             name="firstname"
             id="firstname"
+            placeholder="firstname"
             required
             onChange={props.formHandler}
-          ></input>
+          />
         </div>
         <div className="form-field">
-          <label htmlFor="lastname">Last name</label>
+          <label htmlFor="lastname">Lastname</label>
           <input
             type="text"
             name="lastname"
             id="lastname"
+            placeholder="lastname"
             onChange={props.formHandler}
-          ></input>
+          />
         </div>
         <div className="form-field">
-          <label htmlFor="phone">Phone number</label>
+          <label htmlFor="phone">Username</label>
           <input
-            type="number"
-            name="phone"
-            id="phone"
+            type="Username"
+            name="username"
+            id="username"
+            placeholder="username"
             onChange={props.formHandler}
-          ></input>
+          />
         </div>{" "}
         <div className="form-field">
           <label htmlFor="email">Email</label>
@@ -45,14 +45,29 @@ const SignUpForm = (props) => {
             type="email"
             name="email"
             id="email"
+            placeholder="@email"
             onChange={props.formHandler}
           />
         </div>
-        <input type="submit" value="send"></input>
+        <div className="form-field">
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            onChange={props.formHandler}
+          />
+        </div>
+        <input type="submit" value="send" />
       </form>
       <div class="right-container">
-        <h2>LET'S GET STARTED!</h2>
-        <h3>Join with us for .....</h3>
+        <h2 className="right-h2">Hello Friend!</h2>
+        <h3>Enter your personal details and start journey with us.</h3>
+        <p>Already have an account?</p>
+        <NavLink to="/SignIn" className="signIn">
+          Sign In
+        </NavLink>
       </div>
     </div>
   );

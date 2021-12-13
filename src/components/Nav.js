@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import recipeLogo from "../images/cookit.svg";
 
 const Nav = () => {
@@ -7,14 +6,17 @@ const Nav = () => {
     <nav className="navClas">
       <img alt="cook it logo" src={recipeLogo} className="logo" />
       <h2>The Authentic food</h2>
-      <ul>
+      <ul className="nav-link">
         <li>
-          <Link to="/Signin" className="signin">
+          <NavLink to="/Signin" className="signin">
             Sign In
-          </Link>
-          <Link to="/Signup" className="signup">
+          </NavLink>
+          <NavLink to="/Signup" className="signup">
             Sign Up
-          </Link>
+          </NavLink>
+          <NavLink to="/about" className="about">
+            About us
+          </NavLink>
         </li>
       </ul>
     </nav>
