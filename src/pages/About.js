@@ -25,7 +25,11 @@ const About = (props) => {
         ))}
       </div>
       <div className="why">
-        <p>why</p>
+        <h2>Why COOK-IT?</h2>
+        <p>
+          We bring multiculturalism into your life through your stomach.
+          We make internationalitation more than a marketing narrative in our daily routines.  
+        </p>
       </div>
       <div className="partners">
         <p>Partners</p>
