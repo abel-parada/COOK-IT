@@ -1,7 +1,7 @@
 require("dotenv").config()
 
-const PORT = 5000
-const MONGODB_URI =`mongodb+srv://kapa:123456kaPA@cluster0.tfjsx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+const PORT = process.env.PORT;
+const MONGODB_URI = process.env.MONGODB_URI
 
 module.exports={
     PORT, 
