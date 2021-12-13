@@ -1,12 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home";
 import LandingPage from "./pages/LandingPage";
 import Profile from "./pages/Profile";
 import SingleProfile from "./pages/SingleProfile";
 import NotFound from "./pages/NotFound";
-import About from "./pages/About"
 
 function App() {
   return (
@@ -15,14 +14,14 @@ function App() {
         <Routes>
           {/* Route:is the component user needs to see when they will navigate to that path. */}
           <Route path="/" exact element={<LandingPage />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/SignIn" element={<SignIn />} />
-          <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/LandingPage" element={<LandingPage />} />
-          <Route path="Profile" element={<Profile />} />
-          <Route path="SingleProfile" element={<SingleProfile />} />
-          <Route path="NotFound" element={<NotFound />} />
+          <Route path="/home" element={<Home />} />
+          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/signIn" element={<SignIn />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/landingpage" element={<LandingPage />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="singleprofile" element={<SingleProfile />} />
+          <Route path="notfound" element={<NotFound />} />
         </Routes>
       </div>
     </Router>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './Nav';
 
-const Header = () => {
+const Headerone = () => {
 	return (
 		<header>
 			<div className="container"> 
@@ -12,4 +12,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default Headerone;

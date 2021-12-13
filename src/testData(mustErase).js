@@ -1,3 +1,4 @@
+import pic from"./images/bake.jpg"
 export const Users = [
     {
       id:1,
@@ -50,12 +51,12 @@ export const Users = [
       username: "Safak Kocaoglu",
     },
   ];
-  
+
   export const Posts = [
     {
       id: 1,
       desc: "Love For All, Hatred For None.",
-      photo: "assets/post/1.jpeg",
+      photo: "../public/images/bake.jpg",
       date: "5 mins ago",
       userId: 1,
       like: 32,
@@ -63,7 +64,7 @@ export const Users = [
     },
     {
       id: 2,
-      photo: "assets/post/2.jpeg",
+      photo: "https://images.unsplash.com/photo-1635796615200-a16b3a235b9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       date: "15 mins ago",
       userId: 2,
       like: 2,
@@ -72,7 +73,7 @@ export const Users = [
     {
       id: 3,
       desc: "Every moment is a fresh beginning.",
-      photo: "assets/post/3.jpeg",
+      photo: {pic},
       date: "1 hour ago",
       userId: 3,
       like: 61,

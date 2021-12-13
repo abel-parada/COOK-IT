@@ -5,10 +5,11 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import {HiPlusCircle} from "react-icons/hi";
 import {HiOutlineUserCircle} from "react-icons/hi";
 import {FaSearch} from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 const navigation = [
-  { name: 'About', href: '#', current: true },
-  { name: 'Recipes', href: '#', current: false },
+  { name: 'About', link: '/about', current: true },
+  { name: 'Recipes', link: '/ownrecipes', current: false },
 ]
 
 function classNames(...classes) {
@@ -49,9 +50,9 @@ export default function Navigation() {
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.link}
                         className={classNames(
                           item.current ? 'bg-yellow-400 text-white' : 'text-gray-300 hover:bg-yellow-400 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
@@ -59,7 +60,7 @@ export default function Navigation() {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>

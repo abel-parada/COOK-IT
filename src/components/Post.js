@@ -4,7 +4,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 
 
 const Post = ({post}) => {
-
+    
     console.log(post);
 
     return (
@@ -22,7 +22,7 @@ const Post = ({post}) => {
                 </div>
                 <div className='postCenter'>
                     <span className='postText'>{post?.desc}</span>
-                    <img className='postImg' src='https://images.food52.com/Xktd5OT0m7RkRTEP3XD8ZFQrCZ4=/1504x1000/filters:format(webp)/519d2a22-0de8-4ef1-8e36-8571c1ea2938--IMG_7191.jpeg' alt='' />
+                    <img className='postImg' src={post?.photo} alt='noo show' />
                 </div>
                 <div className='postBottom'>
                     <div className='postBottomLeft'>
