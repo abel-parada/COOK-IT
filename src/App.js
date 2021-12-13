@@ -15,6 +15,7 @@ function App() {
           {/* Route:is the component user needs to see when they will navigate to that path. */}
           <Route path="/" exact element={<LandingPage />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/home2222" element={<Home />} />
           {/* <Route path="/about" element={<About />} /> */}
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/signUp" element={<SignUp />} />
@@ -22,6 +23,7 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="singleprofile" element={<SingleProfile />} />
           <Route path="notfound" element={<NotFound />} />
+
         </Routes>
       </div>
     </Router>
