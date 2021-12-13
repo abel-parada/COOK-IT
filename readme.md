@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hello
 
 ### WE ARE DOING THIS!
@@ -20,3 +21,8 @@ Page has the following components:
 ## About page
 
 It will display programatically the circles with our faces.
+=======
+# COOk_IT APP
+
+https://www.freecodecamp.org/news/react-router-tutorial/
+>>>>>>> 2931f52b8f23c91920ca362471bdb0224f9d9fd2
