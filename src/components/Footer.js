@@ -1,47 +1,27 @@
 import React from "react";
+import imgg from "../images/cookit.svg";
 
 const Footer = () => {
   return (
     <div class="footer bg-white relative pt-1 border-b-2 border-blue-700">
       <div class="container mx-auto px-6">
         <div class="sm:flex sm:mt-10">
-          <div class="mt-8 sm:mt-0 sm:w-full sm:px-12 flex flex-col md:flex-row justify-between">
+          <div class="mt-8 sm:mt-0 sm:w-full sm:px-12 flex flex-col sm:flex-row justify-between	">
             <div class="flex flex-col">
               <span class="font-bold text-gray-700 uppercase mb-2">
-                Special diets{" "}
+                About Us
               </span>
-              <span class="my-2">
-                <a
-                  href="#"
-                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
-                >
-                  Vegetarian
-                </a>
-              </span>
-              <span class="my-2">
-                <a
-                  href="#"
-                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
-                >
-                  Non-vegetarian{" "}
-                </a>
-              </span>
-              <span class="my-2">
-                <a
-                  href="#"
-                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
-                >
-                  Low carb{" "}
-                </a>
-              </span>
-              <span class="my-2">
-                <a
-                  href="#"
-                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
-                >
-                  Vegan{" "}
-                </a>
-              </span>
+              <img class="w-20 mx-left mb-5" src={imgg} alt="some" />
+
+              <div class="description w-full sm: md:w-1/2 text-gray-500 text-sm">
+                <span class="my-2">
+                  Tokyo, Japan’s busy capital, mixes the ultramodern and the
+                  traditional, from neon-lit skyscrapers to historic temples.
+                  The opulent Meiji Shinto Shrine is known for its towering gate
+                  and surrounding woods. The Imperial Palace sits amid large
+                  public gardens
+                </span>
+              </div>
             </div>
             <div class="flex flex-col">
               <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">
