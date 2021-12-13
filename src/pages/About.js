@@ -20,6 +20,7 @@ const About = (props) => {
             job={member.job}
             pic={member.pic}
             github={member.github}
+            profile={member.profile}
           />
         ))}
       </div>
