@@ -36,7 +36,10 @@
     transform: rotate(360deg);
   }
 }
-
+.bg-image {
+  height: 100vh;
+  width: 100%;
+}
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -46,8 +49,6 @@
 .social-icon {
   display: flex;
   justify-content: center;
-  margin: 0.5rem;
-  margin-left: 1rem;
 }
 .svgIcon {
   width: 1.5rem;
@@ -89,4 +90,12 @@ header img {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
+  font-size: 1.5rem;
+}
+
+.why p {
+  text-align: center;
+  word-spacing: 0.5rem;
+  margin: 1rem;
+  padding: 1rem;
 }

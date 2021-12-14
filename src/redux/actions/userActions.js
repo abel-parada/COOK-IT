@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { Route, useNavigate } from "react-router-dom";
+//
 
 export const userLogin = (reqObj) => async (dispatch) => {
   // let navigate = useNavigate();
@@ -8,13 +8,16 @@ export const userLogin = (reqObj) => async (dispatch) => {
   //  dispatch({ type: "LOADING", payload: true });
 
   try {
-    const response = await axios.post("http://localhost:5000/api/login", reqObj);
+    const response = await axios.post(
+      "http://localhost:5000/api/login",
+      reqObj
+    );
     localStorage.setItem("cookIt-user", JSON.stringify(response.data));
-    
+
     // dispatch({ type: "LOADING", payload: false });
   } catch (error) {
     console.log(error);
-    
+
     dispatch({ type: "LOADING", payload: false });
   }
 };

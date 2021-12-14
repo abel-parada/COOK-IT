@@ -8,10 +8,13 @@ import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props
 import { GoogleLogin } from "react-google-login";
 
 const SignInForm = (props) => {
+
+ 
   let dispatch = useDispatch()
   let navigate = useNavigate()
 
   
+
   // google login
   const googleSuccess = async (res) => {
     const result = res?.profileObj;
@@ -81,39 +84,37 @@ const SignInForm = (props) => {
         <h2>WELCOME BACK</h2>
         <h3>To Keep connected with us please login with your personal info</h3>
         <div className="social-site">
-
           {/* <button className="fb-button">
             Join us with
             <FaFacebook color="#734062" size="0.5rem" className="icon" />
           </button> */}
 
-         {/* ///// */}
-         <FacebookLogin
+          {/* ///// */}
+          <FacebookLogin
             appId="215201880647676"
             // autoLoad
             callback={responseFacebook}
             render={(renderProps) => (
-              <button
-              className="fb-button"
-                onClick={renderProps.onClick}
-              >
-               Join us with
-            <FaFacebook color="#734062" size="0.5rem" className="icon" />
+              <button className="fb-button" onClick={renderProps.onClick}>
+                Join us with
+                <FaFacebook color="#734062" size="0.5rem" className="icon" />
               </button>
             )}
           />
 
-         {/* ///// */}
+          {/* ///// */}
 
           <GoogleLogin
             clientId="655288511165-8v2cmof3a4gfhftb02ufa763qech6u6i.apps.googleusercontent.com"
             render={(renderProps) => (
               <button
-              className="gogl-button"
+                className="gogl-button"
                 onClick={renderProps.onClick}
                 disabled={renderProps.disabled}
                 variant="contained"
-              > Join us with 
+              >
+                {" "}
+                Join us with
                 <FaGooglePlus color="#734062" size="1rem" className="icon" />
               </button>
             )}
@@ -123,23 +124,6 @@ const SignInForm = (props) => {
             cookiePolicy={"single_host_origin"}
           />
 
-
-
-
-         
-          {/* <FacebookLogin
-            appId=""
-            autoLoad
-            callback={responseFacebook}
-            render={(renderProps) => (
-              <button className="fb-button" onClick={renderProps.onClick}>
-                Join us with
-                <FaFacebook color="#734062" size="0.5rem" className="icon" />
-              </button>
-            )}
-          />
-            */}
-          
           <p className="text-sm mt-4">
             Dont have an account?
             <NavLink className="signUp" to="/SignUp">
