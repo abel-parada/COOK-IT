@@ -18,7 +18,7 @@ const Creator = ({ name, pic, profile, job, github }) => {
           <p>{job}</p>
           <div className="social-icon">
             <button onClick={githubHandler}>
-              <FaGithub color="purple" className="svgIcon" />
+              <FaGithub color="purple" className="svgIcon m-4" />
             </button>
             <button onClick={linkedinHandler}>
               <FaLinkedin color="purple" className="svgIcon" />
