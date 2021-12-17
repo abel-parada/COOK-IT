@@ -10,6 +10,7 @@ const Nav = () => {
       <h2>The Authentic food</h2>
       <ul className="nav-link">
         <li>
+          <NavLink to="/recepie"> Recipe Form</NavLink>
           <NavLink to="/Signin" className="signin">
             Sign In
           </NavLink>

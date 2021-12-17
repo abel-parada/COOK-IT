@@ -132,7 +132,8 @@ const SignInForm = (props) => {
           </p>
         </div>
       </div>
-    </div>
+      <input type="submit" value="send"></input>
+    </form>
   );
 };
 

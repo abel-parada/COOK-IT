@@ -69,7 +69,7 @@ const SignUpForm = (props) => {
           Sign In
         </NavLink>
       </div>
-    </div>
+      </div>
   );
 };
 

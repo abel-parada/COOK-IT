@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const LandingPage = () => {
   return (
-    <div className="landingPage">
+    <div className="flec flex-col min-h-screen">
       <Headerone />
       <Main />
       <Footer />

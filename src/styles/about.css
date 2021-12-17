@@ -36,10 +36,14 @@
     transform: rotate(360deg);
   }
 }
+<<<<<<< HEAD
+
+=======
 .bg-image {
   height: 100vh;
   width: 100%;
 }
+>>>>>>> bda8aceb24df72ffb6889ef22ef8b8b48f9ed26c
 .wrapper {
   display: flex;
   flex-wrap: wrap;
