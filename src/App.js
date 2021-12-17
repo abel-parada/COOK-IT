@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import Home from "./pages/Home";
 import SingleProfile from "./pages/SingleProfile";
 import NotFound from "./pages/NotFound";
+import RecepieForm from "./pages/RecepieForm"
 // import "./App.css";
 //  test
 function App() {
