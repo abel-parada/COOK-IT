@@ -29,6 +29,6 @@ export const staff = [
     job: "Developer",
     github: "AsravanthiR",
     pic: "assets/images/sravanthi.jpeg",
-    profile: "AsravanthiR",
+    profile: "sravanthi-avadhanula-70097820b",
   },
 ];

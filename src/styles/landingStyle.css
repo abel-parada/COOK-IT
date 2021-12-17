@@ -18,6 +18,7 @@
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  position: relative;
 }
 .navClas > * {
   height: 3rem;
@@ -26,6 +27,13 @@
 h1 {
   font-size: 2rem;
 }
+.logo-link {
+  height: 75px;
+}
+.logo {
+  width: 90px;
+  height: 80px;
+}
 .navClas h2 {
   font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -33,9 +41,6 @@ h1 {
   margin-top: 0.5rem;
   padding-left: 16rem;
 }
-/* .bars {
-  display: none;
-} */
 .navClas ul {
   list-style: none;
 }
@@ -43,7 +48,7 @@ h1 {
   margin-top: 1rem;
 }
 .navClas li a {
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 300;
   margin: 0 1rem;
@@ -64,10 +69,7 @@ li a:hover {
   background-color: #ecb653;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.logo {
-  width: 90px;
-  height: 80px;
-}
+
 /************************** Main ******************************/
 /*.socialnetwork {
   text-align: center;
@@ -150,11 +152,18 @@ img {
   grid-row: 5 / span 2;
   animation-delay: calc(6 * var(--stagger-delay));
 }
-
-footer p {
-  padding: 1rem 0;
+.footer-bar {
+  height: 10vh;
 }
-
+.footer-bar p {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+@media (max-width: 910px) {
+  .navClas h2 {
+    padding-left: 5rem;
+  }
+}
 @media (max-width: 700px) {
   .navClas h2 {
     padding-left: 1rem;
@@ -184,6 +193,9 @@ footer p {
     width: 90%;
     grid-template-columns: repeat(4, 3fr);
     grid-template-rows: repeat(5, 4rem);
+  }
+  footer p {
+    padding: 1rem 0;
   }
 }
 @media (max-width: 350px) {

@@ -10,7 +10,7 @@ const About = (props) => {
   return (
     <div>
       <Headerone />
-      <img src={bake} alt="ingredients" />
+      <img src={bake} alt="ingredients" className="bg-image" />
       <h1>Meet the CHEFS!</h1>
       <div className="wrapper">
         {staff.map((member) => (
@@ -25,12 +25,18 @@ const About = (props) => {
         ))}
       </div>
       <div className="why">
-        <p>why</p>
+        <h2 className="pt-6">Why COOK-IT?</h2>
+        <p>
+          We bring multiculturalism into your life through your stomach. Cook
+          aims to make internationalitation more than a marketing narrative in
+          our daily routines.
+        </p>
       </div>
-      <div className="partners">
+      {/* <div className="partners">
         <p>Partners</p>
-      </div>
+      </div> */}
     </div>
   );
 };
+
 export default About;
