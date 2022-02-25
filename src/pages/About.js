@@ -8,10 +8,10 @@ import "../styles/about.css";
 const About = (props) => {
   console.log(staff);
   return (
-    <div>
+    <div className="creater-container">
       <Headerone />
       <img src={bake} alt="ingredients" className="bg-image" />
-      <h1>Meet the CHEFS!</h1>
+      <h1>Meet the Tech Chefs</h1>
       <div className="wrapper">
         {staff.map((member) => (
           <Creator

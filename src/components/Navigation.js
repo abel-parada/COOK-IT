@@ -1,19 +1,19 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import {HiPlusCircle} from "react-icons/hi";
-import {HiOutlineUserCircle} from "react-icons/hi";
-import {FaSearch} from "react-icons/fa";
-import {Link} from "react-router-dom";
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { HiPlusCircle } from "react-icons/hi";
+import { HiOutlineUserCircle } from "react-icons/hi";
+import { FaSearch } from "react-icons/fa";
+import { NavLink, Link } from "react-router-dom";
 
 const navigation = [
-  { name: 'About', link: '/about', current: true },
-  { name: 'Recipes', link: '/ownrecipes', current: false },
-]
+  { name: "About", link: "/about", current: true },
+  { name: "Recipes", link: "/ownrecipes", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Navigation() {
@@ -54,10 +54,12 @@ export default function Navigation() {
                         key={item.name}
                         to={item.link}
                         className={classNames(
-                          item.current ? 'bg-yellow-400 text-white' : 'text-gray-300 hover:bg-yellow-400 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          item.current
+                            ? "bg-yellow-400 text-white"
+                            : "text-gray-300 hover:bg-yellow-400 hover:text-white",
+                          "px-3 py-2 rounded-md text-sm font-medium"
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </Link>
@@ -70,7 +72,7 @@ export default function Navigation() {
                   type="button"
                   className="bg-gray-800 p-1 rounded-full text-yellow-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-yellow-800 focus:ring-white"
                 >
-                  <span className="sr-only" >View notifications</span>
+                  <span className="sr-only">View notifications</span>
                   <FaSearch className="h-6 w-6" aria-hidden="true" />
                 </button>
                 <button
@@ -86,7 +88,7 @@ export default function Navigation() {
                   <div>
                     <Menu.Button className="bg-yellow-400 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
-                      <HiOutlineUserCircle fontSize="2.75rem"/>
+                      <HiOutlineUserCircle fontSize="2.75rem" />
                     </Menu.Button>
                   </div>
                   <Transition
@@ -103,7 +105,10 @@ export default function Navigation() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
                           >
                             Your Profile
                           </a>
@@ -113,7 +118,10 @@ export default function Navigation() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
                           >
                             Dashboard
                           </a>
@@ -123,7 +131,10 @@ export default function Navigation() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
                           >
                             Sign out
                           </a>
@@ -144,10 +155,12 @@ export default function Navigation() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block px-3 py-2 rounded-md text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -157,5 +170,5 @@ export default function Navigation() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

@@ -8,12 +8,8 @@ import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props
 import { GoogleLogin } from "react-google-login";
 
 const SignInForm = (props) => {
-
- 
-  let dispatch = useDispatch()
-  let navigate = useNavigate()
-
-  
+  let dispatch = useDispatch();
+  let navigate = useNavigate();
 
   // google login
   const googleSuccess = async (res) => {
@@ -52,7 +48,7 @@ const SignInForm = (props) => {
       <form onSubmit={props.submit}>
         <div className="form-field">
           <h2>LOGIN FORM</h2>
-          <label htmlFor="username">UserName</label>
+          <label htmlFor="username"></label>
           <span class="input-item">
             <i class="fa fa-user-circle"></i>
           </span>
@@ -66,10 +62,8 @@ const SignInForm = (props) => {
           />
         </div>
         <div className="form-field">
-          <label htmlFor="password">Password</label>
-          <span class="input-item">
-            <i class="fa fa-key"></i>
-          </span>
+          <label htmlFor="password"></label>
+
           <input
             type="password"
             name="password"
@@ -132,7 +126,7 @@ const SignInForm = (props) => {
           </p>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 
