@@ -1,4 +1,4 @@
-.navbar,
+.navClas,
 .footer-bar {
   width: 100vw;
   text-align: center;
@@ -28,8 +28,8 @@ h1 {
   height: 75px;
 }
 .logo {
-  width: 90px;
-  height: 80px;
+  width: 70px;
+  height: 60px;
 }
 .navClas h2 {
   font-size: 1.2rem;
@@ -56,6 +56,7 @@ h1 {
   border-radius: 5px 20px;
   padding: 0.5rem;
 }
+
 .navClas li a:active,
 li a:hover {
   color: white;
@@ -73,7 +74,7 @@ main .container {
   background-color: rgb(245, 245, 245);
   position: relative;
   min-height: 73vh;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 .socialnetwork {
   display: flex;
@@ -90,7 +91,8 @@ main .container {
 
 .gallery {
   max-width: 1500px;
-  width: 70%;
+  width: 80%;
+  height: 70vh;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
@@ -103,6 +105,10 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+.footer-bar {
+  position: absolute;
+  bottom: 0;
 }
 
 @keyframes cardEntrance {
@@ -164,6 +170,9 @@ img {
   .navClas h2 {
     padding-left: 5rem;
   }
+  .gallery {
+    height: 70vh;
+  }
 }
 @media (max-width: 700px) {
   .navClas h2 {
@@ -190,20 +199,34 @@ img {
     width: 80px;
     height: 70px;
   }
+  main .container {
+    margin-top: 1.5rem;
+  }
   .gallery {
     width: 90%;
-    grid-template-columns: repeat(4, 3fr);
-    grid-template-rows: repeat(5, 4rem);
+    height: 65vh;
   }
   footer p {
     padding: 1rem 0;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .navClas li a {
     border: none;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin: 5px;
     padding: 5px;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 2rem;
+  }
+  .footer-bar p {
+    font-size: 0.6rem;
   }
 }

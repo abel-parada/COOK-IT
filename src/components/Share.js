@@ -4,6 +4,8 @@ import { VscFileMedia, VscReactions } from "react-icons/vsc";
 import { GoLocation } from "react-icons/go";
 import { BiTag } from "react-icons/bi";
 import pic from "../images/bake.jpg";
+import { useState } from "react";
+import PopUp from "./PopUp";
 
 const Share = () => {
   return (
@@ -40,6 +42,7 @@ const Share = () => {
           </div>
           {/* We want the shareButton inside the popUp post form */}
           <button className="shareButton">Share</button>
+          {/* <PopUp /> */}
         </div>
       </div>
     </div>

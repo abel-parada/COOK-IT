@@ -7,7 +7,7 @@ const Nav = () => {
       <Link to="/" className="logo-link">
         <img alt="cook it logo" src={recipeLogo} className="logo" />
       </Link>
-      <h2>The Authentic food</h2>
+      <h2>Cook It</h2>
       <ul className="nav-link">
         <li>
           <NavLink to="/Signin" className="signin">
