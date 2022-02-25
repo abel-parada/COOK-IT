@@ -36,14 +36,16 @@
     transform: rotate(360deg);
   }
 }
-<<<<<<< HEAD
 
-=======
 .bg-image {
   height: 100vh;
   width: 100%;
 }
->>>>>>> bda8aceb24df72ffb6889ef22ef8b8b48f9ed26c
+
+.creater-container h1 {
+  text-align: center;
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -91,15 +93,17 @@ header img {
   height: 400px;
   width: 100%;
   background-image: url("../images/cut.jpg");
+  position: absolute;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .why p {
-  text-align: center;
   word-spacing: 0.5rem;
-  margin: 1rem;
+  margin: 12rem;
   padding: 1rem;
+  z-index: 10;
 }

@@ -5,7 +5,6 @@ const Headerone = () => {
   return (
     <header className="navbar">
       <div className="container">
-        <h1>Cook IT</h1>
         <Nav />
       </div>
     </header>
