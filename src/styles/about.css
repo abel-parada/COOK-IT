@@ -36,16 +36,13 @@
     transform: rotate(360deg);
   }
 }
-
 .bg-image {
   height: 100vh;
   width: 100%;
 }
-
 .creater-container h1 {
   text-align: center;
 }
-
 .wrapper {
   display: flex;
   flex-wrap: wrap;
