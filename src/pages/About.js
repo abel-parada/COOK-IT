@@ -10,7 +10,10 @@ const About = (props) => {
   return (
     <div className="creater-container">
       <Headerone />
-      <img src={bake} alt="ingredients" className="bg-image" />
+      <div className="bgImage-container">
+        <img src={bake} alt="ingredients" className="bg-image" />
+      </div>
+
       <h1>Meet the Tech Chefs</h1>
       <div className="wrapper">
         {staff.map((member) => (
