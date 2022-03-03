@@ -3,8 +3,8 @@ import recipeLogo from "../images/cookit.svg";
 import { NavLink, Link } from "react-router-dom";
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
   { name: "About", link: "/about", current: true },
@@ -21,7 +21,7 @@ export default function Example() {
     <Disclosure as="nav" className="bg-gray-500">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
             <div className="relative flex items-center justify-between h-20">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -52,7 +52,7 @@ export default function Example() {
                   </Link>
                 </div>
                 <div className="hidden sm:block sm:ml-14">
-                  <div className="flex space-x-10 items-center">
+                  <div className="flex justify-between items-center">
                     {navigation.map((item) => (
                       <NavLink
                         key={item.name}
@@ -61,7 +61,7 @@ export default function Example() {
                           item.current
                             ? "bg-gray-900 text-white"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "px-6 py-4 rounded-md text-bg font-medium"
+                          "px-6 py-4 rounded-md m-12 text-bg font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >

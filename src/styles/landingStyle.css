@@ -76,7 +76,7 @@ li a:hover {
 main .container {
   background-color: rgb(245, 245, 245);
   position: relative;
-  min-height: 73vh;
+  min-height: 80vh;
   margin-top: 3rem;
 }
 .socialnetwork {

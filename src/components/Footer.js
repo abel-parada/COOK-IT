@@ -1,20 +1,29 @@
 import React from "react";
 import imgg from "../images/cookit.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const githubHandler = () => {
+    window.open(`https://github.com/abel-parada/COOK-IT`);
+  };
+  const linkedinHandler = () => {
+    window.open(`https://www.linkedin.com/in/meanjula`);
+  };
   return (
-    <div class="footer bg-white relative pt-1 border-b-2 border-blue-700">
-      <div class="container mx-auto px-6">
-        <div class="sm:flex sm:mt-10">
-          <div class="mt-8 sm:mt-0 sm:w-full sm:px-12 flex flex-col sm:flex-row justify-between	">
-            <div class="flex flex-col">
-              <span class="font-bold text-gray-700 uppercase mb-2">
+    <div className="footer bg-white relative pt-1 border-b-2 border-blue-700">
+      <div className="container mx-auto px-6">
+        <div className="sm:flex sm:mt-10">
+          <div className="mt-8 sm:mt-0 sm:w-full sm:px-12 flex flex-col sm:flex-row justify-between	">
+            <div className="flex flex-col">
+              <span className="font-bold text-gray-700 uppercase mb-2">
                 About Us
               </span>
-              <img class="w-20 mx-left mb-5" src={imgg} alt="some" />
+              <Link to="/" className="logo-link">
+                <img alt="cook it logo" src={imgg} className="logo" />
+              </Link>
 
-              <div class="description w-full sm: md:w-1/2 text-gray-500 text-sm">
-                <span class="my-2">
+              <div className="description w-full sm: md:w-1/2 text-gray-500 text-sm">
+                <span className="my-2">
                   Tokyo, Japan’s busy capital, mixes the ultramodern and the
                   traditional, from neon-lit skyscrapers to historic temples.
                   The opulent Meiji Shinto Shrine is known for its towering gate
@@ -23,73 +32,73 @@ const Footer = () => {
                 </span>
               </div>
             </div>
-            <div class="flex flex-col">
-              <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">
+            <div className="flex flex-col">
+              <span className="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">
                 explore cuisines{" "}
               </span>
-              <span class="my-2">
+              <span className="my-2">
                 <a
                   href="#"
-                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                  className="text-gray-700 hover:bg-gray-200 hover:text-white-500"
                 >
                   {" "}
                   link 1
                 </a>
               </span>
-              <span class="my-2">
+              <span className="my-2">
                 <a
                   href="#"
-                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                  className="text-gray-700 hover:bg-gray-200 hover:text-white-500"
                 >
                   {" "}
                   link 1
                 </a>
               </span>
-              <span class="my-2">
+              <span className="my-2">
                 <a
                   href="#"
-                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                  className="text-gray-700 hover:bg-gray-200 hover:text-white-500"
                 >
                   {" "}
                   link 1
                 </a>
               </span>
-              <span class="my-2">
+              <span className="my-2">
                 <a
                   href="#"
-                  class="text-gray-700 hover:bg-gray-200 hover:text-white-500"
+                  className="text-gray-700 hover:bg-gray-200 hover:text-white-500"
                 >
                   {" "}
                   link 1
                 </a>
               </span>
             </div>
-            <div class="flex flex-col">
-              <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">
+            <div className="flex flex-col">
+              <span className="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">
                 stay connected
               </span>
-              <div class="flex sm:flex-row justify-between">
-                <span class="my-2">
-                  <a
-                    href="#"
-                    class="text-blue-700  text-md hover:text-blue-500"
+              <div className="flex sm:flex-row justify-between">
+                <span className="my-2">
+                  <button
+                    onClick={githubHandler}
+                    className="text-blue-700  text-md hover:text-blue-500"
                   >
                     <svg
-                      class="w-6 h-6 text-gray-300 fill-current"
+                      className="w-6 h-6 text-gray-300 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >
                       <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                     </svg>{" "}
-                  </a>
+                  </button>
                 </span>
-                <span class="my-2">
+                <span className="my-2">
                   <a
                     href="#"
-                    class="text-blue-700  text-md hover:text-blue-500"
+                    className="text-blue-700  text-md hover:text-blue-500"
                   >
                     <svg
-                      class="w-6 h-6 text-gray-400 fill-current"
+                      className="w-6 h-6 text-gray-400 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                     >
@@ -97,29 +106,29 @@ const Footer = () => {
                     </svg>{" "}
                   </a>
                 </span>
-                <span class="my-2">
-                  <a
-                    href="#"
-                    class="text-blue-700  text-md hover:text-blue-500"
+                <span className="my-2">
+                  <button
+                    onClick={linkedinHandler}
+                    className="text-blue-700  text-md hover:text-blue-500"
                   >
                     <svg
-                      class="w-6 h-6 text-gray-600 fill-current"
+                      className="w-6 h-6 text-gray-600 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >
                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                     </svg>
-                  </a>
+                  </button>
                 </span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container mx-auto px-6">
-        <div class="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
-          <div class="sm:w-2/3 text-center py-6">
-            <p class="text-sm text-blue-700 font-bold mb-2">
+      <div className="container mx-auto px-6">
+        <div className="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
+          <div className="sm:w-2/3 text-center py-6">
+            <p className="text-sm text-blue-700 font-bold mb-2">
               All rights reserved by @ Cook IT 2021
             </p>
           </div>
