@@ -1,0 +1,56 @@
+/***************** POPUP COMPONENT *********************/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(35, 35, 35, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-popup {
+  border: 1px solid black;
+  width: 40%;
+  max-width: 1400px;
+  /* margin-top: 5rem; */
+  height: 50vh;
+  background-color: rgb(236, 234, 231);
+  font-size: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+}
+.inner-popup .contaner {
+  display: flex;
+}
+.popup-header {
+  background-color: rgb(82, 46, 74);
+  padding: 8px;
+  color: white;
+  justify-content: space-around;
+  height: 4rem;
+}
+.icon {
+  margin-top: 8px;
+}
+.profile {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.prof-img {
+  margin: 1rem;
+}
+.post-text {
+  height: 14rem;
+  background-color: rgb(222, 213, 207);
+  margin: 1rem;
+  padding: 1rem;
+  width: 95%;
+}
+.shareBtn-container {
+  justify-content: space-around;
+}

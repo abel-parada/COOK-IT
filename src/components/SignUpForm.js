@@ -61,7 +61,7 @@ const SignUpForm = (props) => {
         </div>
         <input type="submit" value="send" />
       </form>
-      <div class="right-container">
+      <div className="right-container">
         <h2 className="right-h2">Hello Friend!</h2>
         <h3>Enter your personal details and start journey with us.</h3>
         <p>Already have an account?</p>
@@ -69,7 +69,7 @@ const SignUpForm = (props) => {
           Sign In
         </NavLink>
       </div>
-      </div>
+    </div>
   );
 };
 
