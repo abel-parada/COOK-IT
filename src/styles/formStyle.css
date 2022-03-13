@@ -98,7 +98,6 @@ input[type="submit"] {
   font-size: 1.2rem;
   color: black;
   border-radius: 5px;
-  text-transform: capitalize;
   height: 2.5rem;
   padding-left: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
