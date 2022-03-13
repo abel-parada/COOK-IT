@@ -33,12 +33,14 @@ const SignUp = () => {
 
   // sending data to databse and closing popup box
   const postHandler = (e) => {
+    e.preventDefault();
+
     axios
-      .post("/user", formState)
+      .post("/register", formState)
       .then((response) => {
         setPopup(false);
+        console.log(response);
         //for closing
-
         window.location.reload();
       })
       .catch((error) => {

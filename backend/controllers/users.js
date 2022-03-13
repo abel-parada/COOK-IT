@@ -15,9 +15,9 @@ usersRouter.post("/register", async (request, response) => {
 
   const user = new User({
     fname: body.fname,
-    lname:body.lname,
+    lname: body.lname,
     username: body.username,
-    email:body.email,
+    email: body.email,
     passwordHash,
   });
 
@@ -25,5 +25,10 @@ usersRouter.post("/register", async (request, response) => {
 
   response.json(savedUser);
 });
+
+// usersRouter.get("/:singleid", async (request, response) => {
+//   const singleUser = await User.find(request.params.id);
+//   response.json(singleUser);
+// });
 
 module.exports = usersRouter;
