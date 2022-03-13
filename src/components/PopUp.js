@@ -8,18 +8,18 @@ const PopUp = ({ firstname, lastname, username, email, postHandler }) => {
   return (
     <div className="overlay">
       <div className="inner-popup">
-        <h3>Your note:</h3>
+        <h2>User detail</h2>
         <p>
-          First name <span>{firstname}</span>
+          Firstname: <span>{firstname}</span>
         </p>
         <p>
-          Last name <span>{lastname}</span>
+          Lastname: <span>{lastname}</span>
         </p>
         <p>
-          username <span>{username}</span>
+          Username: <span>{username}</span>
         </p>
         <p>
-          email <span>{email}</span>
+          Email: <span>{email}</span>
         </p>
 
         <button className="yesButton" onClick={postHandler}>
