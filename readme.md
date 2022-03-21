@@ -1,3 +1,3 @@
 # COOk_IT APP
 
-## A social media app for food enthusaist !
+## A social media app for food enthusiast !
