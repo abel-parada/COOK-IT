@@ -12,7 +12,7 @@ const Home = () => {
       <div className="homecontainer">
         <Sidebar />
         <Newsfeed />
-        <Rightbar />
+        {/* <Rightbar /> */}
       </div>
     </div>
   );
